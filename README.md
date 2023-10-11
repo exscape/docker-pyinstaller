@@ -1,3 +1,18 @@
+
+Build the images with e.g.
+$ `docker build -t pyinstaller-3.12-linux-amd64 -f Dockerfile-py3.12-amd64 .`
+
+Then run with e.g.
+
+$ `docker run -v "$(pwd):/src/" pyinstaller-3.12-linux-amd64`
+
+Results should be in dist/linux.
+
+Old README.md (from original repository) below.
+
+-----------------------------------
+
+
 # PyInstaller Docker Images
 
 **cdrx/pyinstaller-linux** and **cdrx/pyinstaller-windows** are a pair of Docker containers to ease compiling Python applications to binaries / exe files.
